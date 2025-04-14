@@ -180,7 +180,7 @@ const Contact: FC = () => {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  placeholder="How can we help you?"
+                  placeholder="How can I help you?"
                 ></textarea>
               </div>
 

@@ -33,13 +33,13 @@ const MobileMenu: FC<MobileMenuProps> = ({ isOpen, onClose }) => {
             </li>
           </ul>
         </nav>
-        <a
+        {/* <a
           href="https://intuitionhmt.datedechoix.com/main.php?c=29744232170&language=french"
           className="booking-button"
           onClick={onClose}
         >
           Book Now
-        </a>
+        </a> */}
       </div>
     </div>
   );
