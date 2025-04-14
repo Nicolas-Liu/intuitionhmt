@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { FC, useEffect, useRef, useState } from "react";
 import "./Testimonials.css";
 
 interface Testimonial {
@@ -11,6 +11,9 @@ interface Testimonial {
 
 const Testimonials: FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [touchStart, setTouchStart] = useState(0);
+  const [touchEnd, setTouchEnd] = useState(0);
+  const sliderRef = useRef<HTMLDivElement>(null);
 
   // Updated with actual Google reviews
   const testimonials: Testimonial[] = [
@@ -55,6 +58,32 @@ const Testimonials: FC = () => {
       rating: 5,
     },
   ];
+  // Handle touch events for swipe
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStart - touchEnd > 75) {
+      // Swipe left
+      nextTestimonial();
+    } else if (touchStart - touchEnd < -75) {
+      // Swipe right
+      prevTestimonial();
+    }
+  };
+
+  // Auto-rotate testimonials
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextTestimonial();
+    }, 8000);
+    return () => clearInterval(interval);
+  }, [activeIndex]);
 
   const nextTestimonial = () => {
     setActiveIndex((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
@@ -64,13 +93,9 @@ const Testimonials: FC = () => {
     setActiveIndex((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
   };
 
-  // Keyboard navigation
   const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === "ArrowRight") {
-      nextTestimonial();
-    } else if (e.key === "ArrowLeft") {
-      prevTestimonial();
-    }
+    if (e.key === "ArrowRight") nextTestimonial();
+    else if (e.key === "ArrowLeft") prevTestimonial();
   };
 
   return (
@@ -101,7 +126,13 @@ const Testimonials: FC = () => {
             </svg>
           </button>
 
-          <div className="testimonial-slider">
+          <div
+            className="testimonial-slider"
+            ref={sliderRef}
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+          >
             <div
               className="testimonial-track"
               style={{ transform: `translateX(-${activeIndex * 100}%)` }}
@@ -124,27 +155,7 @@ const Testimonials: FC = () => {
                   </div>
                   <p className="testimonial-content">"{testimonial.content}"</p>
                   <div className="client-info">
-                    <div>
-                      <span className="client-name">{testimonial.name}</span>
-                      {testimonial.date && (
-                        <span className="client-date">{testimonial.date}</span>
-                      )}
-                    </div>
-                    <a
-                      href="https://g.page/r/CQwz1g1Cx8Q-EAI/review"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="google-review-link"
-                    >
-                      {/* <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="#4285F4"
-                      >
-                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
-                      </svg>
-                      Read on Google */}
-                    </a>
+                    <span className="client-name">{testimonial.name}</span>
                   </div>
                 </div>
               ))}
@@ -179,7 +190,7 @@ const Testimonials: FC = () => {
 
         <div className="all-reviews-link">
           <a
-            href="https://www.google.com/search?sca_esv=bfd7f0276b7e69c9&si=APYL9bs7Hg2KMLB-4tSoTdxuOx8BdRvHbByC_AuVpNyh0x2KzZwEKPODO9hBhbDS0KrxmM0zuAzSRC1w-I9kd0ko_ZXK1xeRMMdGDVRXT9Pfkn-Kue2UbKAYI13ZQ0lx2oLLhnPPROpHqz9vhPKO2ghJhYiIggTM5g%3D%3D&q=Intuition+hmt+%28Katrina+Tomczak%29+Reviews&sa=X&ved=2ahUKEwi1sNXOo9iMAxUNK1kFHTImNUQQ0bkNegQIMxAE&biw=1536&bih=735&dpr=1.25"
+            href="https://www.google.com/search?q=Intuition+hmt+(Katrina+Tomczak)+Reviews"
             target="_blank"
             rel="noopener noreferrer"
             className="button"

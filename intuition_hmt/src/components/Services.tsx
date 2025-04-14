@@ -57,7 +57,7 @@ const Services: FC = () => {
   return (
     <section id="services" className="services-section">
       <div className="container">
-        <h2>Our Services</h2>
+        <h2>Services</h2>
         <p className="section-intro">
           Each treatment is customized to your individual needs and preferences.
         </p>
