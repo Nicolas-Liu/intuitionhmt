@@ -78,12 +78,12 @@ const Testimonials: FC = () => {
   };
 
   // Auto-rotate testimonials
-  useEffect(() => {
-    const interval = setInterval(() => {
-      nextTestimonial();
-    }, 8000);
-    return () => clearInterval(interval);
-  }, [activeIndex]);
+  //   useEffect(() => {
+  //     const interval = setInterval(() => {
+  //       nextTestimonial();
+  //     }, 8000);
+  //     return () => clearInterval(interval);
+  //   }, [activeIndex]);
 
   const nextTestimonial = () => {
     setActiveIndex((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
