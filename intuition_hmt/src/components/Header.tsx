@@ -1,5 +1,4 @@
 import { FC } from "react";
-// import { Link } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
 import MobileMenu from "./MobileMenu";
 import logo from "../assets/intuition-logo-image-text.png";
@@ -17,6 +16,20 @@ const Header: FC<HeaderProps> = ({
   mobileMenuOpen,
   toggleMobileMenu,
 }) => {
+  const handleDesktopNavClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    id: string
+  ) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   return (
     <header className="header">
       <div className="container">
@@ -26,20 +39,39 @@ const Header: FC<HeaderProps> = ({
               <img src={logo} alt="Intuition Holistic and Massage Therapy" />
             </Link>
           </> */}
-
           <nav className="desktop-nav">
             <ul>
               <li>
-                <a href="#services">Services</a>
+                <a
+                  href="#services"
+                  onClick={(e) => handleDesktopNavClick(e, "services")}
+                >
+                  Services
+                </a>
               </li>
               <li>
-                <a href="#about">About</a>
+                <a
+                  href="#about"
+                  onClick={(e) => handleDesktopNavClick(e, "about")}
+                >
+                  About
+                </a>
               </li>
               <li>
-                <a href="#testimonials">Testimonials</a>
+                <a
+                  href="#testimonials"
+                  onClick={(e) => handleDesktopNavClick(e, "testimonials")}
+                >
+                  Testimonials
+                </a>
               </li>
               <li>
-                <a href="#contact">Contact</a>
+                <a
+                  href="#contact"
+                  onClick={(e) => handleDesktopNavClick(e, "contact")}
+                >
+                  Contact
+                </a>
               </li>
             </ul>
           </nav>

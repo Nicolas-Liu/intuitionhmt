@@ -120,6 +120,7 @@ a:hover {
 
 .desktop-nav a {
   font-weight: 500;
+  scroll-behavior: smooth;
 }
 
 .header-actions {

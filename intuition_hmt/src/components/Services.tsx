@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { FC, useRef, useState } from "react";
 import "./Services.css";
 
 interface Service {
@@ -157,7 +157,7 @@ const Services: FC = () => {
     },
     // Add more services if needed
   ];
-
+  const servicesRef = useRef<HTMLDivElement>(null);
   const [expandedCards, setExpandedCards] = useState<number[]>([]);
   const [showAll, setShowAll] = useState(false);
 
@@ -177,11 +177,19 @@ const Services: FC = () => {
   const visibleServices = showAll ? services : services.slice(0, 6);
 
   const toggleShowAll = () => {
+    const wasShowingAll = showAll;
     setShowAll((prev) => !prev);
+
+    // Scroll to top only when hiding services (showing less)
+    if (wasShowingAll && servicesRef.current) {
+      setTimeout(() => {
+        servicesRef.current?.scrollIntoView();
+      }, 0);
+    }
   };
 
   return (
-    <section id="services" className="services-section">
+    <section id="services" className="services-section" ref={servicesRef}>
       <div className="container">
         <h2>Services</h2>
         <p className="section-intro">
