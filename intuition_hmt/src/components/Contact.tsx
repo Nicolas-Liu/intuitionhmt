@@ -25,11 +25,21 @@ const Contact: FC = () => {
     setIsSubmitting(true);
 
     try {
-      // In a real app, you would connect to an email service or backend
-      console.log("Form submitted:", formData);
+      // Prepare form data for Netlify
+      const formDataToSend = new FormData();
+      Object.entries(formData).forEach(([key, value]) => {
+        formDataToSend.append(key, value);
+      });
+      formDataToSend.append("form-name", "contact");
 
-      // Simulate API call
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+      // Send to Netlify
+      await fetch("/", {
+        method: "POST",
+        body: formDataToSend,
+        headers: {
+          Accept: "application/json",
+        },
+      });
 
       setSubmitMessage(
         "Thank you for your message! We will get back to you soon."
@@ -144,7 +154,23 @@ const Contact: FC = () => {
           {/* Contact Form */}
           <div className="contact-form-container">
             <h3>Send Us a Message</h3>
-            <form onSubmit={handleSubmit} className="contact-form">
+            <form
+              onSubmit={handleSubmit}
+              className="contact-form"
+              name="contact" // Important: form name
+              method="POST"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+            >
+              {/* Add a hidden honeypot field */}
+              <input type="hidden" name="form-name" value="contact" />
+              <div style={{ display: "none" }}>
+                <label>
+                  Don't fill this out if you're human:
+                  <input name="bot-field" />
+                </label>
+              </div>
+
               <div className="form-group">
                 <label htmlFor="name">Full Name</label>
                 <input
