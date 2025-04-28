@@ -108,11 +108,11 @@ const Footer: FC = () => {
             &copy; {new Date().getFullYear()} Intuition Holistic and Massage
             Therapy. All rights reserved.
           </div>
-          <div className="legal-links">
+          {/* <div className="legal-links">
             <a href="#">Privacy Policy</a>
             <span className="divider">|</span>
             <a href="#">Terms of Service</a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
