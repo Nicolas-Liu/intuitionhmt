@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../assets/hero-background.jpg");
+    url("../assets/hero-background.gif");
   background-size: cover;
   background-position: center;
   color: white;
@@ -105,9 +105,9 @@
   }
 }
 
-.hero {
+/* .hero {
   animation: pulse 20s infinite ease-in-out;
-}
+} */
 
 @media (max-width: 768px) {
   .hero h1 {
