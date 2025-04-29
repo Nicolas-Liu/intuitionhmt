@@ -77,7 +77,6 @@ const Header: FC<HeaderProps> = ({
           </nav>
 
           <div className="header-actions">
-            <ThemeToggle darkMode={darkMode} toggleTheme={toggleTheme} />
             <button
               className={`hamburger ${mobileMenuOpen ? "open" : ""}`}
               onClick={toggleMobileMenu}
@@ -87,6 +86,7 @@ const Header: FC<HeaderProps> = ({
               <span></span>
               <span></span>
             </button>
+            <ThemeToggle darkMode={darkMode} toggleTheme={toggleTheme} />
           </div>
         </div>
       </div>

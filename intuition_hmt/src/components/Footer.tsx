@@ -49,16 +49,16 @@ const Footer: FC = () => {
               <h4 className="links-title">Services</h4>
               <ul>
                 <li>
+                  <a href="#services">Fertility Work</a>
+                </li>
+                <li>
+                  <a href="#services">Deep tissue</a>
+                </li>
+                <li>
                   <a href="#services">Prenatal massage</a>
                 </li>
                 <li>
-                  <a href="#services">Therapeutic Massage</a>
-                </li>
-                <li>
-                  <a href="#services">Deep Tissue</a>
-                </li>
-                <li>
-                  <a href="#services">Aromatherapy</a>
+                  <a href="#services">Prenatal massage</a>
                 </li>
                 <li>
                   <a href="#services">Learn more</a>
