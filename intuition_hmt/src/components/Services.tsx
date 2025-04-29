@@ -36,7 +36,7 @@ const Services: FC = () => {
         "https://images.ctfassets.net/yixw23k2v6vo/spu_wysiwyg_fid42714_asset/42f4ba77cbd1df0b1f5777e3f4ff908d/acupressure_thumbs_on_back_iStock-495718179.jpg",
     },
     {
-      title: "Prenatal massage",
+      title: "Prenatal Massage",
       description:
         "For clients 16 weeks pregnant or more. If you're earlier in your pregnancy and need support, feel free to reach out by text or email. This gentle, side-lying massage is tailored for comfort and safety, with lighter pressure than a standard massage. Please let me know of any specific needs or concerns.",
       // duration: "60 mins",

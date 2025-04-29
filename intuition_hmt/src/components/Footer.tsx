@@ -55,10 +55,10 @@ const Footer: FC = () => {
                   <a href="#services">Deep tissue</a>
                 </li>
                 <li>
-                  <a href="#services">Prenatal massage</a>
+                  <a href="#services">Prenatal Massage</a>
                 </li>
                 <li>
-                  <a href="#services">Prenatal massage</a>
+                  <a href="#services">Prenatal Massage</a>
                 </li>
                 <li>
                   <a href="#services">Learn more</a>

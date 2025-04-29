@@ -1,7 +1,7 @@
 import { FC } from "react";
 import ThemeToggle from "./ThemeToggle";
 import MobileMenu from "./MobileMenu";
-import logo from "../assets/intuition-logo-image-text.png";
+import logo from "../assets/intuition-logo-image-only.png";
 
 interface HeaderProps {
   darkMode: boolean;
@@ -35,9 +35,9 @@ const Header: FC<HeaderProps> = ({
       <div className="container">
         <div className="header-content">
           {/* <>
-            <Link to="/" className="logo">
+            <a href="/" className="logo">
               <img src={logo} alt="Intuition Holistic and Massage Therapy" />
-            </Link>
+            </a>
           </> */}
           <nav className="desktop-nav">
             <ul>
