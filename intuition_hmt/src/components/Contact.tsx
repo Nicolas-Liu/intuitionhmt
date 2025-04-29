@@ -21,38 +21,28 @@ const Contact: FC = () => {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
+    // e.preventDefault();
     setIsSubmitting(true);
 
     try {
-      // Prepare form data for Netlify
-      const formDataToSend = new FormData();
+      const formDataToSend = new URLSearchParams();
+      formDataToSend.append("form-name", "contact");
       Object.entries(formData).forEach(([key, value]) => {
         formDataToSend.append(key, value);
       });
-      formDataToSend.append("form-name", "contact");
 
-      // Send to Netlify
       await fetch("/", {
         method: "POST",
         body: formDataToSend,
         headers: {
-          Accept: "application/json",
+          "Content-Type": "application/x-www-form-urlencoded",
         },
       });
 
-      setSubmitMessage(
-        "Thank you for your message! We will get back to you soon."
-      );
-      setFormData({
-        name: "",
-        email: "",
-        message: "",
-      });
+      setSubmitMessage("Thank you for your message! We'll contact you soon.");
+      setFormData({ name: "", email: "", message: "" });
     } catch (error) {
-      setSubmitMessage(
-        "There was an error sending your message. Please try again later."
-      );
+      setSubmitMessage("Error sending message. Please try again.");
     } finally {
       setIsSubmitting(false);
     }
