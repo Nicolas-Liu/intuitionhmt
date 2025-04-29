@@ -30,7 +30,7 @@ const Services: FC = () => {
     {
       title: "Accupresure",
       description:
-        "Acupressure Massage is a therapeutic healing art rooted in Traditional Chinese Medicine, using firm finger pressure on key energy points (meridians) to release tension and restore balance in the body. By stimulating these points, this massage helps relieve muscle stiffness, improve circulation, and encourage the smooth flow of Qi (life force energy). Unlike traditional massage, acupressure targets specific areas to alleviate pain, reduce stress, and promote deep relaxation—offering both physical relief and energetic harmony.",
+        "This is an ancient healing art, that treats the mind-body-spirit as a whole. There are no needles used, it is mostly light pressure that is held on points all over the body. Whether you are coming in for physical pain or injury or emotional, we will look at your case, as a whole and treat you accordingly. For this treatment, the first one will be 90 minutes and then usually 60 minutes for the following appointments.",
       // duration: "60 mins",
       image:
         "https://images.ctfassets.net/yixw23k2v6vo/spu_wysiwyg_fid42714_asset/42f4ba77cbd1df0b1f5777e3f4ff908d/acupressure_thumbs_on_back_iStock-495718179.jpg",
