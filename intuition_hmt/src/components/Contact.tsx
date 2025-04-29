@@ -21,7 +21,7 @@ const Contact: FC = () => {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
-    // e.preventDefault();
+    e.preventDefault();
     setIsSubmitting(true);
 
     try {
