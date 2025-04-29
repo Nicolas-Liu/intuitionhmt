@@ -1,7 +1,15 @@
-import { FC } from "react";
+import { FC, useEffect } from "react";
 import "./Hero.css";
 
 const Hero: FC = () => {
+  useEffect(() => {
+    // This will ensure the animations trigger when the component mounts
+    const elements = document.querySelectorAll(
+      ".hero h1, .hero .subtitle, .hero .hero-actions"
+    );
+    elements.forEach((el) => el.classList.add("animate"));
+  }, []);
+
   return (
     <section className="hero">
       <div className="container">

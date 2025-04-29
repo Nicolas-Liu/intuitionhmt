@@ -5,29 +5,45 @@
   align-items: center;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../assets/hero-background.jpg");
-  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://www.inovifertility.com/wp-content/smush-webp/2024/08/Can-a-Fertility-Massage-Really-Help-You-Get-Pregnant-722x406-1.jpg.webp"); */
   background-size: cover;
   background-position: center;
   color: white;
   text-align: center;
   padding-top: 80px;
+  overflow: hidden;
 }
 
 .hero-content {
   max-width: 800px;
   margin: 0 auto;
+  transform: translateY(20px);
 }
 
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 20px;
   color: white;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.hero h1.animate {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .subtitle {
   font-size: 1.5rem;
   margin-bottom: 40px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out 0.3s, transform 0.8s ease-out 0.3s;
+}
+
+.subtitle.animate {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .hero-actions {
@@ -35,11 +51,34 @@
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out 0.6s, transform 0.8s ease-out 0.6s;
+}
+
+.hero-actions.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.button {
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  transform: scale(1);
 }
 
 .button.primary {
   background-color: var(--primary-color);
   color: white;
+}
+
+.button.primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .button.secondary {
@@ -50,6 +89,24 @@
 
 .button.secondary:hover {
   background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+}
+
+/* Background pulse animation */
+@keyframes pulse {
+  0% {
+    background-size: 100% auto;
+  }
+  50% {
+    background-size: 105% auto;
+  }
+  100% {
+    background-size: 100% auto;
+  }
+}
+
+.hero {
+  animation: pulse 20s infinite ease-in-out;
 }
 
 @media (max-width: 768px) {

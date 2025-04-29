@@ -143,7 +143,7 @@ const Contact: FC = () => {
 
           {/* Contact Form */}
           <div className="contact-form-container">
-            <h3>Send Us a Message</h3>
+            <h3>Let's Connect</h3>
             <form
               onSubmit={handleSubmit}
               className="contact-form"
