@@ -34,11 +34,11 @@ const Header: FC<HeaderProps> = ({
     <header className="header">
       <div className="container">
         <div className="header-content">
-          {/* <>
+          <>
             <a href="/" className="logo">
               <img src={logo} alt="Intuition Holistic and Massage Therapy" />
             </a>
-          </> */}
+          </>
           <nav className="desktop-nav">
             <ul>
               <li>
