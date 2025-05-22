@@ -3,8 +3,10 @@
   min-height: 600px;
   display: flex;
   align-items: center;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../assets/hero-background.gif"); */
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../assets/hero-background.gif");
+    url("https://salondenouveau.com/wp-content/uploads/2017/12/AdobeStock_53171005-e1514500439627.jpeg");
   background-size: cover;
   background-position: center;
   color: white;
