@@ -55,7 +55,7 @@ const About = () => {
           </div>
           <div className="about-image">
             <div className="image-placeholder">
-              <img src={logo} alt="Massage Therapist" />
+              <img loading="lazy" src={logo} alt="Massage Therapist" />
             </div>
           </div>
         </div>

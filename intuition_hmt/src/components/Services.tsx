@@ -200,6 +200,7 @@ const Services: FC = () => {
                 <h3>{service.title}</h3>
                 {service.image && (
                   <img
+                    loading="lazy"
                     src={service.image}
                     alt={service.title}
                     className="service-image"
