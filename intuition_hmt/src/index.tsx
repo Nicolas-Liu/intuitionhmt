@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import heroBackground from "./assets/hero-background.gif";
+import heroBackground from "./assets/hero-background.webp";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement

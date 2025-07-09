@@ -1,6 +1,6 @@
 import { FC } from "react";
 import "./Footer.css";
-import logo from "../assets/intuition-logo-image-only.png";
+import logo from "../assets/intuition-logo-image-only.webp";
 
 const Footer: FC = () => {
   return (

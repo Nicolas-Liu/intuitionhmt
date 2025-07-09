@@ -1,7 +1,7 @@
 import { FC } from "react";
 import ThemeToggle from "./ThemeToggle";
 import MobileMenu from "./MobileMenu";
-import logo from "../assets/intuition-logo-image-only.png";
+import logo from "../assets/intuition-logo-image-only.webp";
 
 interface HeaderProps {
   darkMode: boolean;

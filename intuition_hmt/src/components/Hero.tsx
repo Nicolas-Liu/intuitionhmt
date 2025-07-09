@@ -1,6 +1,6 @@
 import { FC, useEffect } from "react";
 import "./Hero.css";
-import heroBackground from "../assets/hero-background.gif";
+import heroBackground from "../assets/hero-background.webp";
 
 const Hero: FC = () => {
   useEffect(() => {
@@ -13,7 +13,7 @@ const Hero: FC = () => {
 
   return (
     <section className="hero">
-      <img className="hero-bg" src={heroBackground} alt="" loading="lazy" />
+      <img className="hero-bg" src={heroBackground} alt="" />
       <div className="container">
         <div className="hero-content">
           <h1>Holistic Healing for Mind & Body</h1>
