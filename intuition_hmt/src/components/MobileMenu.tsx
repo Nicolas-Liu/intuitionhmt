@@ -31,6 +31,17 @@ const MobileMenu: FC<MobileMenuProps> = ({ isOpen, onClose }) => {
                 Contact
               </a>
             </li>
+            <li>
+              <a
+                href="https://intuitionhmt.datedechoix.com/main.php?c=29744232170&language=french"
+                target="_blank"
+                className="button primary"
+                onClick={onClose}
+                rel="noreferrer"
+              >
+                Book Now
+              </a>
+            </li>
           </ul>
         </nav>
         {/* <a
