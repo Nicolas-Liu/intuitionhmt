@@ -29,8 +29,8 @@ const NotificationBanner: FC = () => {
         <div className="banner-message">
           {/* <span className="banner-icon">📋</span> */}
           <p>
-            We are currently not accepting new clients. Thank you for your
-            understanding.
+            Due to unforeseen events, I will not be seeing any clients until
+            further notice. Thank you for understanding.
           </p>
         </div>
         <button
