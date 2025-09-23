@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import "./styles/global.css";
 import "./styles/theme.css";
+import NotificationBanner from "./components/NotificationBanner";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -31,6 +32,7 @@ function App() {
         toggleMobileMenu={toggleMobileMenu}
       />
       <main>
+        <NotificationBanner />
         <Hero />
         <Services />
         <About />
