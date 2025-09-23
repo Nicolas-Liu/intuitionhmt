@@ -30,7 +30,7 @@ const NotificationBanner: FC = () => {
           {/* <span className="banner-icon">📋</span> */}
           <p>
             Due to unforeseen events, I will not be seeing any clients until
-            further notice. Thank you for understanding.
+            October 26th. Thank you for understanding.
           </p>
         </div>
         <button
