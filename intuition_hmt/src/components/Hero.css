@@ -73,6 +73,21 @@
   transform: translateY(0);
 }
 
+.banner-image {
+  grid-column-gap: 56px;
+  grid-row-gap: 56px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .banner-image.custom-home {
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    flex-flow: column;
+  }
+}
+
 .button {
   padding: 12px 30px;
   border-radius: 30px;

@@ -1,24 +1,12 @@
-import { FC, useState, useEffect } from "react";
+import { FC, useState } from "react";
 import "./NotificationBanner.css";
 
 const NotificationBanner: FC = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [isExiting, setIsExiting] = useState(false);
 
-  // Check if user has previously dismissed the banner
-  // useEffect(() => {
-  //   const isDismissed = localStorage.getItem("bannerDismissed");
-  //   if (isDismissed === "true") {
-  //     setIsVisible(false);
-  //   }
-  // }, []);
-
   const handleDismiss = () => {
     setIsExiting(true);
-    // setTimeout(() => {
-    //   setIsVisible(false);
-    //   localStorage.setItem("bannerDismissed", "true");
-    // }, 300); // Match the CSS transition duration
   };
 
   if (!isVisible) return null;
