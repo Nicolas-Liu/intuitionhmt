@@ -25,7 +25,7 @@ function App() {
 
   return (
     <div className={`app ${darkMode ? "dark-theme" : ""}`}>
-      <NotificationBanner />
+      {/* <NotificationBanner /> */}
       <Header
         darkMode={darkMode}
         toggleTheme={toggleTheme}
