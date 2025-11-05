@@ -12,6 +12,14 @@ interface Service {
 const Services: FC = () => {
   const services: Service[] = [
     {
+      title: "Pre & Post-Operative Chest & Breast Massage",
+      description:
+        "This gentle, specialized massage is designed for clients preparing for or recovering from chest/breast surgeries (augmentation, reduction, reconstruction, top surgery, mastectomy) and for clients with healthy chests who simply want to release tension, improve circulation, or soften tissue restrictions. It helps reduce swelling, softens scar tissue and adhesions, eases discomfort and numbness, improves circulation, and supports emotional wellbeing.",
+      // duration: "60-90 mins",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHk8MMC6fY5xKsAL2Do7XGCIzgzyeEb8nRUg&s",
+    },
+    {
       title: "Fertility work",
       description:
         "Whether you're just starting, undergoing IVF, or have been trying for a while, I offer a natural, holistic approach to support your fertility journey. Using acupressure, Traditional Chinese Medicine, and Reproductive Reflexology, I’m one of the few practitioners in North America combining these methods.",
