@@ -9,6 +9,30 @@ interface Service {
   image?: string;
 }
 
+// ⭐ New component to handle image loading state
+interface ServiceImageProps {
+  src: string;
+  alt: string;
+  className: string;
+}
+
+const ServiceImage: FC<ServiceImageProps> = ({ src, alt, className }) => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  return (
+    <div className={`image-container ${isLoaded ? "loaded" : ""}`}>
+      <img
+        loading="lazy"
+        src={src}
+        alt={alt}
+        className={className}
+        onLoad={() => setIsLoaded(true)}
+      />
+    </div>
+  );
+};
+// ⭐ End of new component
+
 const Services: FC = () => {
   const services: Service[] = [
     {
@@ -207,8 +231,8 @@ const Services: FC = () => {
               <div key={index} className="service-card">
                 <h3>{service.title}</h3>
                 {service.image && (
-                  <img
-                    loading="lazy"
+                  // ⭐ Use the new ServiceImage component here
+                  <ServiceImage
                     src={service.image}
                     alt={service.title}
                     className="service-image"

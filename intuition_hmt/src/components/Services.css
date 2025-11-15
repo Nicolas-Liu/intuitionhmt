@@ -35,12 +35,49 @@
   margin-bottom: 15px;
 }
 
-.service-image {
+/* ⭐ New styles for image loading preview */
+.image-container {
   width: 100%;
   height: 200px;
-  object-fit: cover;
   border-radius: 8px;
   margin-bottom: 15px;
+  /* Placeholder background color (you can change this) */
+  background-color: #e0e0e0;
+  overflow: hidden; /* To keep the image border radius */
+  position: relative;
+}
+
+/* Optional: Add a subtle loading pulse effect */
+.image-container:not(.loaded) {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+/* ⭐ End of new styles */
+
+.service-image {
+  width: 100%;
+  height: 100%; /* Changed from 200px to 100% to fill container */
+  object-fit: cover;
+  /* Removed border-radius here as it's on the container */
+  /* Added transition and initial opacity */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+/* When the image is loaded, apply full opacity */
+.image-container.loaded .service-image {
+  opacity: 1;
 }
 
 .service-details {
