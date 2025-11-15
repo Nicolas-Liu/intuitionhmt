@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
@@ -14,13 +14,37 @@ function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const toggleTheme = () => {
-    setDarkMode(!darkMode);
-    document.body.classList.toggle("dark-theme");
-  };
-
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
+  };
+
+  const checkTimeForTheme = () => {
+    const hour = new Date().getHours();
+    // Nighttime hours (e.g., 7 PM to 6:59 AM)
+    const isNightTime = hour >= 19 || hour < 7;
+
+    setDarkMode(isNightTime);
+
+    if (isNightTime) {
+      document.body.classList.add("dark-theme");
+    } else {
+      document.body.classList.remove("dark-theme");
+    }
+  };
+
+  useEffect(() => {
+    checkTimeForTheme();
+  }, []);
+
+  const toggleTheme = () => {
+    const newDarkModeState = !darkMode;
+    setDarkMode(newDarkModeState);
+
+    if (newDarkModeState) {
+      document.body.classList.add("dark-theme");
+    } else {
+      document.body.classList.remove("dark-theme");
+    }
   };
 
   return (
