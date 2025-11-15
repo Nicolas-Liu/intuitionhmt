@@ -1,0 +1,142 @@
+{
+  "header": {
+    "navServices": "Services",
+    "navAbout": "À propos",
+    "navTestimonials": "Témoignages",
+    "navContact": "Contact",
+    "ariaLabelMenu": "Menu"
+  },
+  "hero": {
+    "title": "Guérison holistique pour l'esprit et le corps",
+    "description": "Découvrez le pouvoir transformateur du massage thérapeutique et des soins holistiques",
+    "book": "Réservez votre séance",
+    "services": "Explorer les services"
+  },
+  "about": {
+    "title": "À propos d'Intuition",
+    "descriptionOne": "En tant que massothérapeute agréée et praticienne holistique, j'offre des soins corporels personnalisés, thérapeutiques et rajeunissants, adaptés aux besoins de chaque client. Ma passion est d'aider les gens à se reconnecter à leur esprit, leur corps et leur âme pour soutenir leur bien-être global.",
+    "descriptionTwo": "Je me spécialise dans une variété de modalités de massage, y compris le massage des tissus profonds, suédois, prénatal et Lomi Lomi. Grâce à une solide compréhension de l'anatomie et à un toucher intuitif, je crée des séances à la fois efficaces et profondément réparatrices.",
+    "descriptionThree": "Au-delà du massage, j'offre des services holistiques tels que le soutien à la fertilité, l'acupression/médecine traditionnelle chinoise, la réflexologie, le Reiki, la guérison par le son et d'autres techniques basées sur l'énergie. J'offre également des soins esthétiques sélectionnés comme le massage facial et le drainage lymphatique brésilien pour le remodelage corporel.",
+    "descriptionFour": "Ma mission est de créer un environnement sûr, confortable et curatif où les clients peuvent expérimenter les bienfaits profonds du massage et des thérapies holistiques."
+  },
+  "services": {
+    "title": "Services",
+    "description": "Chaque soin est personnalisé selon vos besoins et préférences individuels.",
+    "massage": {
+      "chestBreastMassage": {
+        "title": "Massage pré et post-opératoire de la poitrine et des seins",
+        "description": "Ce massage doux et spécialisé est conçu pour les clients se préparant ou se remettant d'une chirurgie de la poitrine/des seins (augmentation, réduction, reconstruction, chirurgie du torse, mastectomie) et pour les clients ayant une poitrine saine qui souhaitent simplement relâcher les tensions, améliorer la circulation ou assouplir les restrictions tissulaires. Il aide à réduire l'enflure, à adoucir le tissu cicatriciel et les adhérences, à soulager l'inconfort et l'engourdissement, à améliorer la circulation et à soutenir le bien-être émotionnel."
+      },
+      "fertilityWork": {
+        "title": "Travail sur la fertilité",
+        "description": "Que vous débutiez, que vous suiviez une FIV ou que vous essayiez depuis un certain temps, j'offre une approche naturelle et holistique pour soutenir votre parcours de fertilité. Utilisant l'acupression, la médecine traditionnelle chinoise et la réflexologie reproductive, je suis l'une des rares praticiennes en Amérique du Nord à combiner ces méthodes."
+      },
+      "deepTissueMassage": {
+        "title": "Massage des tissus profonds",
+        "description": "Cible les couches plus profondes des muscles et du tissu conjonctif pour aider à soulager la douleur chronique et la tension musculaire."
+      },
+      "acupressure": {
+        "title": "Acupression",
+        "description": "Ceci est un art de guérison ancestral qui traite l'esprit, le corps et l'âme dans leur ensemble. Aucune aiguille n'est utilisée ; il s'agit principalement d'une légère pression maintenue sur des points répartis sur tout le corps. Que vous veniez pour une douleur physique, une blessure ou un problème émotionnel, nous examinerons votre cas dans sa globalité et vous traiterons en conséquence. Pour ce soin, le premier sera de 90 minutes et les suivants de 60 minutes habituellement."
+      },
+      "prenatalMassage": {
+        "title": "Massage prénatal",
+        "description": "Pour les clientes enceintes de 16 semaines ou plus. Si vous êtes à un stade précoce de votre grossesse et avez besoin de soutien, n'hésitez pas à me contacter par texto ou courriel. Ce massage doux, en position latérale, est adapté au confort et à la sécurité, avec une pression plus légère qu'un massage standard. Veuillez me faire part de tout besoin ou préoccupation spécifique."
+      },
+      "reflexology": {
+        "title": "Réflexologie",
+        "description": "Applique une pression sur des points spécifiques des pieds pour favoriser la guérison des parties correspondantes du corps."
+      },
+      "reikiHealing": {
+        "title": "Soin Reiki",
+        "description": "Technique de guérison énergétique qui favorise la relaxation, la réduction du stress et le soulagement des symptômes."
+      },
+      "relaxationMassage": {
+        "title": "Massage de relaxation",
+        "description": "Ce massage s'adresse aux personnes qui n'ont pas de douleurs spécifiques et qui cherchent simplement à se libérer et à se détendre. La pression est moyenne à moyennement forte, avec des mouvements plus amples. Il peut être combiné à d'autres modalités, selon les besoins du client."
+      },
+      "lymphaticDrainageAesthetic": {
+        "title": "Drainage lymphatique (Esthétique)",
+        "description": "Ce massage lymphatique est un soin esthétique, visant le dégonflement immédiat, le remodelage corporel et la réduction de la cellulite. Cependant, il peut être rude pour le système lymphatique et les organes. La thérapie par le bois est utilisée pendant la séance et peut provoquer des ecchymoses."
+      },
+      "soundHealing": {
+        "title": "Guérison par le son",
+        "description": "Utilisant des diapasons, des fréquences sonores spécialisées sont employées pour créer une atmosphère thérapeutique favorisant le repos profond, le rééquilibrage du système nerveux et la libération émotionnelle."
+      },
+      "facialMassage": {
+        "title": "Massage facial",
+        "description": "Ceci est un massage esthétique du visage, utilisant le drainage lymphatique, la baguette Kansa, le Guasha, les ventouses et l'acupression. Vous bénéficierez d'un soin de 60 minutes, utilisant des huiles et des nettoyants biologiques, spécifiquement conçus pour votre constitution. Veuillez me signaler toute sensibilité cutanée que vous pourriez avoir."
+      },
+      "lomiLomi": {
+        "title": "Lomi-Lomi",
+        "description": "Le Lomi-Lomi est un massage hawaïen relaxant, imitant les vagues de l'océan. Utilisant de longs mouvements rythmés de l'avant-bras et beaucoup d'huile (abricot et noix de coco), ce massage détendra vos muscles, favorisera la circulation sanguine et fera circuler le Qi dans tout le corps."
+      },
+      "cupping": {
+        "title": "Ventouses",
+        "description": "Ceci est un outil ancestral utilisé en médecine chinoise (et dans le monde entier). Il est utilisé pour traiter la douleur chronique ou aiguë, l'inflammation, éliminer les toxines et la stagnation, et pour le bien-être général. Le soin commence par un massage régulier, puis des ventouses en silicone peuvent être utilisées pour glisser et tirer, puis les ventouses solides sont placées pendant 10 à 20 minutes. Cela laisse des marques violettes ou rouges, qui durent de 3 jours à 2 semaines. Si vous souhaitez des ventouses sur tout le corps, je vous recommanderais de réserver une séance de 2 heures."
+      },
+      "guaSha": {
+        "title": "GuaSha",
+        "description": "Grattage de la peau avec un outil guasha, de l'huile et du baume du tigre. Cette technique de médecine traditionnelle chinoise est utilisée pour une multitude de problèmes, mais principalement pour la douleur chronique et l'inflammation. Tendinite, coude du tennisman ou du golfeur, costochondrite, douleur sacro-iliaque, douleur au cou, etc. Elle peut aider à stimuler la circulation, améliorer la communication nerveuse, le flux lymphatique, la réparation musculaire et apaiser les maladies auto-immunes."
+      },
+      "flowerEssences": {
+        "title": "Essences florales",
+        "description": "Ces remèdes vibratoires traitent spécifiquement les problèmes émotionnels et comportementaux qui peuvent affecter votre bien-être général ou celui de tout être vivant. Les essences florales sont des préparations liquides végétales faites à partir des fleurs fraîches d'une plante qui impriment l'eau de leur motif énergétique. Elles sont extrêmement diluées et aucune partie de la fleur n'y est présente, il n'y a donc pas de souci d'allergies. Il y a une petite quantité d'alcool dedans, donc s'il y a des restrictions à cet égard, nous pouvons nous organiser pour en faire sans."
+      },
+      "lymphaticDrainageVodder": {
+        "title": "Drainage lymphatique (Vodder)",
+        "description": "Ceci est le drainage lymphatique plus clinique, utilisant la technique Vodder. Il utilise des mouvements très doux et lents pour pomper et pousser le liquide lymphatique dans tout votre corps. C'est le meilleur traitement pour les personnes souffrant d'œdème, de problèmes circulatoires ou post-chirurgicaux, mais c'est un excellent soin pour quiconque souhaite détoxifier le corps. Veuillez noter que c'est une pression très LÉGÈRE, ce n'est PAS un massage. Vous pourriez également vous sentir un peu fatigué ou patraque après, en raison de la réponse de guérison du corps."
+      },
+      "palliativeEndofLife": {
+        "title": "Fin de vie/Palliatif",
+        "description": "Ce service est destiné à vous ou à votre proche qui approche de la fin de sa vie, que ce soit en raison d'une maladie, par choix ou simplement par vieillesse. Je travaille avec la réflexologie, l'acupression, le Reiki et la guérison par le son pour aider à calmer, apaiser et équilibrer leur esprit, leur corps et leur âme, afin qu'ils soient sereins et à l'aise avec la transition de la vie."
+      },
+      "hotStoneTherapy": {
+        "title": "Thérapie aux pierres chaudes",
+        "description": "Faites l'expérience d'une relaxation profonde tandis que les pierres chaudes font fondre la tension. Des pierres lisses sont placées sur le corps et également utilisées en combinaison avec des techniques de massage pour relâcher les muscles tendus. La pression varie de moyenne à moyennement ferme."
+      }
+    }
+  },
+  "testimonials": {
+    "title": "Témoignages de clients",
+    "description": "Ce que nos clients disent de leurs expériences",
+    "readAllReviews": "Lire tous les avis Google"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "description": "J'aimerais beaucoup avoir de vos nouvelles. Contactez-moi par l'un de ces moyens.",
+    "email": "Envoyez-moi un courriel",
+    "emailAdress": "Intuition.hmt@gmail.com",
+    "location": "Emplacement",
+    "locationDesc": "Dessert la région du Grand Montréal",
+    "callMe": "Appelez-moi",
+    "callNumber": "(438) 814-0471",
+    "book": "Réserver en ligne",
+    "bookDesc": "Planifiez un rendez-vous"
+  },
+  "footer": {
+    "description": "Fournir des services professionnels de massothérapie et de thérapie holistique pour vous aider à atteindre l'équilibre et le bien-être.",
+    "socialMedia": {
+      "instagramLabel": "Instagram"
+    },
+    "titles": {
+      "services": "Services",
+      "quickLinks": "Liens rapides",
+      "contact": "Contact"
+    },
+    "serviceLinks": {
+      "fertilityWork": "Travail sur la fertilité",
+      "deepTissue": "Tissus profonds",
+      "acupressure": "Acupression",
+      "prenatalMassage": "Massage prénatal",
+      "learnMore": "En savoir plus"
+    },
+    "contactLinks": {
+      "bookOnline": "Réserver en ligne"
+    },
+    "copyright": "Intuition Thérapie Holistique et Massage. Tous droits réservés."
+  },
+  "language_selector": {
+    "switch_label": "Changer de langue"
+  }
+}
