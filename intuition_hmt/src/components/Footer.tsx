@@ -1,8 +1,14 @@
 import { FC } from "react";
 import "./Footer.css";
 import logo from "../assets/intuition-logo-image-only.webp";
+import ThemeToggle from "./ThemeToggle";
 
-const Footer: FC = () => {
+interface FooterProps {
+  darkMode: boolean;
+  toggleTheme: () => void;
+}
+
+const Footer: FC<FooterProps> = ({ darkMode, toggleTheme }) => {
   return (
     <footer className="footer">
       <div className="container">
@@ -100,6 +106,10 @@ const Footer: FC = () => {
                   >
                     Book Online
                   </a>
+                </li>
+                <li>
+                  <i className="fas fa-calendar-alt"></i>
+                  <ThemeToggle darkMode={darkMode} toggleTheme={toggleTheme} />
                 </li>
               </ul>
             </div>

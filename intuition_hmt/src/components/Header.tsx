@@ -4,8 +4,8 @@ import MobileMenu from "./MobileMenu";
 import logo from "../assets/intuition-logo-image-only.webp";
 
 interface HeaderProps {
-  darkMode: boolean;
-  toggleTheme: () => void;
+  darkMode?: boolean;
+  toggleTheme?: () => void;
   mobileMenuOpen: boolean;
   toggleMobileMenu: () => void;
 }
@@ -86,7 +86,7 @@ const Header: FC<HeaderProps> = ({
               <span></span>
               <span></span>
             </button>
-            <ThemeToggle darkMode={darkMode} toggleTheme={toggleTheme} />
+            {/* <ThemeToggle darkMode={darkMode} toggleTheme={toggleTheme} /> */}
           </div>
         </div>
       </div>

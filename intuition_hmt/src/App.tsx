@@ -39,7 +39,7 @@ function App() {
         <Testimonials />
         <Contact />
       </main>
-      <Footer />
+      <Footer darkMode={darkMode} toggleTheme={toggleTheme} />
     </div>
   );
 }
