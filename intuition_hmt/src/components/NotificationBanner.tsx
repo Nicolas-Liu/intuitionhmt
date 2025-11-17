@@ -1,5 +1,6 @@
 import { FC, useState } from "react";
 import "./NotificationBanner.css";
+import { useTranslation } from "react-i18next";
 
 const NotificationBanner: FC = () => {
   const [isVisible, setIsVisible] = useState(true);

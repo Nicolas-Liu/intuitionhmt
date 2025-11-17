@@ -1,17 +1,19 @@
-import React from "react";
+import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import heroBackground from "./assets/hero-background.webp";
-
+import "./i18n"; // <-- Must be imported before App is rendered
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
     <link rel="preload" as="image" href={heroBackground} />
-    <App />
+    <Suspense fallback={<div>Loading Translations...</div>}>
+      <App />
+    </Suspense>
   </React.StrictMode>
 );
 

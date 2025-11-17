@@ -4,7 +4,8 @@
     "navAbout": "À propos",
     "navTestimonials": "Témoignages",
     "navContact": "Contact",
-    "ariaLabelMenu": "Menu"
+    "ariaLabelMenu": "Menu",
+    "bookNow": "Réservez votre séance"
   },
   "hero": {
     "title": "Guérison holistique pour l'esprit et le corps",
@@ -14,7 +15,8 @@
   },
   "about": {
     "title": "À propos d'Intuition",
-    "descriptionOne": "En tant que massothérapeute agréée et praticienne holistique, j'offre des soins corporels personnalisés, thérapeutiques et rajeunissants, adaptés aux besoins de chaque client. Ma passion est d'aider les gens à se reconnecter à leur esprit, leur corps et leur âme pour soutenir leur bien-être global.",
+    "firstLetter": "E",
+    "descriptionOne": "n tant que massothérapeute agréée et praticienne holistique, j'offre des soins corporels personnalisés, thérapeutiques et rajeunissants, adaptés aux besoins de chaque client. Ma passion est d'aider les gens à se reconnecter à leur esprit, leur corps et leur âme pour soutenir leur bien-être global.",
     "descriptionTwo": "Je me spécialise dans une variété de modalités de massage, y compris le massage des tissus profonds, suédois, prénatal et Lomi Lomi. Grâce à une solide compréhension de l'anatomie et à un toucher intuitif, je crée des séances à la fois efficaces et profondément réparatrices.",
     "descriptionThree": "Au-delà du massage, j'offre des services holistiques tels que le soutien à la fertilité, l'acupression/médecine traditionnelle chinoise, la réflexologie, le Reiki, la guérison par le son et d'autres techniques basées sur l'énergie. J'offre également des soins esthétiques sélectionnés comme le massage facial et le drainage lymphatique brésilien pour le remodelage corporel.",
     "descriptionFour": "Ma mission est de créer un environnement sûr, confortable et curatif où les clients peuvent expérimenter les bienfaits profonds du massage et des thérapies holistiques."
@@ -95,7 +97,11 @@
         "title": "Thérapie aux pierres chaudes",
         "description": "Faites l'expérience d'une relaxation profonde tandis que les pierres chaudes font fondre la tension. Des pierres lisses sont placées sur le corps et également utilisées en combinaison avec des techniques de massage pour relâcher les muscles tendus. La pression varie de moyenne à moyennement ferme."
       }
-    }
+    },
+    "readMore": "Lire la suite",
+    "readLess": "Lire moins",
+    "showMoreServices": "Afficher plus de services",
+    "showLessServices": "Afficher moins de services"
   },
   "testimonials": {
     "title": "Témoignages de clients",
@@ -103,12 +109,12 @@
     "readAllReviews": "Lire tous les avis Google"
   },
   "contact": {
-    "title": "Contactez-nous",
+    "title": "Contactez-moi",
     "description": "J'aimerais beaucoup avoir de vos nouvelles. Contactez-moi par l'un de ces moyens.",
     "email": "Envoyez-moi un courriel",
     "emailAdress": "Intuition.hmt@gmail.com",
     "location": "Emplacement",
-    "locationDesc": "Dessert la région du Grand Montréal",
+    "locationDesc": "La région du Grand Montréal",
     "callMe": "Appelez-moi",
     "callNumber": "(438) 814-0471",
     "book": "Réserver en ligne",

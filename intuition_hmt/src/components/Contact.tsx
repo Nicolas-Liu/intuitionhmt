@@ -1,15 +1,14 @@
 import { FC } from "react";
 import "./Contact.css";
+import { useTranslation } from "react-i18next";
 
 const Contact: FC = () => {
+  const { t } = useTranslation();
   return (
     <section id="contact" className="contact-section">
       <div className="container">
-        <h2>Get In Touch</h2>
-        <p className="section-intro">
-          I would love to hear from you. Reach out through any of these
-          channels.
-        </p>
+        <h2>{t("contact.title")}</h2>
+        <p className="section-intro">{t("contact.description")}</p>
 
         <div className="contact-info-grid">
           <div className="info-block">
@@ -23,9 +22,9 @@ const Contact: FC = () => {
               </svg>
             </div>
             <div>
-              <h3>Email Me</h3>
+              <h3>{t("contact.email")}</h3>
               <a href="mailto:Intuition.hmt@gmail.com" className="contact-link">
-                Intuition.hmt@gmail.com
+                {t("contact.emailAdress")}
               </a>
             </div>
           </div>
@@ -41,8 +40,8 @@ const Contact: FC = () => {
               </svg>
             </div>
             <div>
-              <h3>Location</h3>
-              <p className="contact-text">Serving the Greater Montreal Area</p>
+              <h3>{t("contact.location")}</h3>
+              <p className="contact-text">{t("contact.locationDesc")}</p>
             </div>
           </div>
 
@@ -57,9 +56,9 @@ const Contact: FC = () => {
               </svg>
             </div>
             <div>
-              <h3>Call Me</h3>
+              <h3>{t("contact.callMe")}</h3>
               <a href="tel:+14388140471" className="contact-link">
-                (438) 814-0471
+                {t("contact.callNumber")}
               </a>
             </div>
           </div>
@@ -75,14 +74,14 @@ const Contact: FC = () => {
               </svg>
             </div>
             <div>
-              <h3>Book Online</h3>
+              <h3>{t("contact.book")}</h3>
               <a
                 href="https://intuitionhmt.datedechoix.com/main.php?c=29744232170&language=french"
                 className="contact-link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Schedule an Appointment
+                {t("contact.bookDesc")}
               </a>
             </div>
           </div>

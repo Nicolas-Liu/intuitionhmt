@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { useTranslation } from "react-i18next";
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -6,6 +7,7 @@ interface MobileMenuProps {
 }
 
 const MobileMenu: FC<MobileMenuProps> = ({ isOpen, onClose }) => {
+  const { t } = useTranslation();
   return (
     <div className={`mobile-menu ${isOpen ? "open" : ""}`}>
       <div className="mobile-menu-content">
@@ -13,22 +15,22 @@ const MobileMenu: FC<MobileMenuProps> = ({ isOpen, onClose }) => {
           <ul>
             <li>
               <a href="#services" onClick={onClose}>
-                Services
+                {t("header.navServices")}
               </a>
             </li>
             <li>
               <a href="#about" onClick={onClose}>
-                About
+                {t("header.navAbout")}
               </a>
             </li>
             <li>
               <a href="#testimonials" onClick={onClose}>
-                Testimonials
+                {t("header.navTestimonials")}
               </a>
             </li>
             <li>
               <a href="#contact" onClick={onClose}>
-                Contact
+                {t("header.navContact")}
               </a>
             </li>
             <li>
@@ -39,7 +41,7 @@ const MobileMenu: FC<MobileMenuProps> = ({ isOpen, onClose }) => {
                 onClick={onClose}
                 rel="noreferrer"
               >
-                Book Now
+                {t("header.bookNow")}
               </a>
             </li>
           </ul>

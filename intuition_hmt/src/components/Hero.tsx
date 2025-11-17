@@ -1,8 +1,10 @@
 import { FC, useEffect } from "react";
 import "./Hero.css";
 import heroBackground from "../assets/hero-background.webp";
+import { useTranslation } from "react-i18next";
 
 const Hero: FC = () => {
+  const { t } = useTranslation();
   useEffect(() => {
     // This will ensure the animations trigger when the component mounts
     const elements = document.querySelectorAll(
@@ -39,11 +41,8 @@ const Hero: FC = () => {
           </div>
         </>
         <div className="hero-content">
-          <h1>Holistic Healing for Mind & Body</h1>
-          <p className="subtitle">
-            Experience the transformative power of therapeutic massage and
-            holistic treatments
-          </p>
+          <h1>{t("hero.title")}</h1>
+          <p className="subtitle">{t("hero.description")}</p>
           <div className="hero-actions">
             <a
               href="https://intuitionhmt.datedechoix.com/main.php?c=29744232170&language=french"
@@ -51,10 +50,10 @@ const Hero: FC = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Book Your Session
+              {t("hero.book")}
             </a>
             <a href="#services" className="button secondary">
-              Explore Services
+              {t("hero.services")}
             </a>
           </div>
         </div>

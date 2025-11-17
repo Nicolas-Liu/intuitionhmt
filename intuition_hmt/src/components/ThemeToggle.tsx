@@ -1,6 +1,6 @@
 import { FC } from "react";
 import "./ThemeToggle.css";
-
+import { useTranslation } from "react-i18next";
 interface ThemeToggleProps {
   darkMode: boolean;
   toggleTheme: () => void;

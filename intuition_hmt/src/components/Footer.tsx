@@ -2,13 +2,14 @@ import { FC } from "react";
 import "./Footer.css";
 import logo from "../assets/intuition-logo-image-only.webp";
 import ThemeToggle from "./ThemeToggle";
-
+import { useTranslation } from "react-i18next";
 interface FooterProps {
   darkMode: boolean;
   toggleTheme: () => void;
 }
 
 const Footer: FC<FooterProps> = ({ darkMode, toggleTheme }) => {
+  const { t } = useTranslation();
   return (
     <footer className="footer">
       <div className="container">
@@ -21,10 +22,7 @@ const Footer: FC<FooterProps> = ({ darkMode, toggleTheme }) => {
                 className="footer-logo"
               />
             </div>
-            <p className="footer-description">
-              Providing professional holistic and massage therapy services to
-              help you achieve balance and wellness.
-            </p>
+            <p className="footer-description">{t("footer.description")}</p>
             <div className="social-links">
               {/* <a href="#" aria-label="Facebook">
                 <i className="fab fa-facebook-f"></i>
@@ -52,49 +50,53 @@ const Footer: FC<FooterProps> = ({ darkMode, toggleTheme }) => {
 
           <div className="footer-links">
             <div className="links-column">
-              <h4 className="links-title">Services</h4>
+              <h4 className="links-title">{t("footer.titles.services")}</h4>
               <ul>
                 <li>
-                  <a href="#services">Fertility Work</a>
+                  <a href="#services">
+                    {t("footer.serviceLinks.fertilityWork")}
+                  </a>
                 </li>
                 <li>
-                  <a href="#services">Deep tissue</a>
+                  <a href="#services">{t("footer.serviceLinks.deepTissue")}</a>
                 </li>
                 <li>
-                  <a href="#services">Accupressure</a>
+                  <a href="#services">{t("footer.serviceLinks.acupressure")}</a>
                 </li>
                 <li>
-                  <a href="#services">Prenatal Massage</a>
+                  <a href="#services">
+                    {t("footer.serviceLinks.prenatalMassage")}
+                  </a>
                 </li>
                 <li>
-                  <a href="#services">Learn more</a>
+                  <a href="#services">{t("footer.serviceLinks.learnMore")}</a>
                 </li>
               </ul>
             </div>
             <div className="links-column">
-              <h4 className="links-title">Quick Links</h4>
+              <h4 className="links-title">{t("footer.titles.quickLinks")}</h4>
               <ul>
                 <li>
-                  <a href="#about">About</a>
+                  <a href="#about">{t("header.navAbout")}</a>
                 </li>
                 <li>
-                  <a href="#services">Services</a>
+                  <a href="#services">{t("header.navServices")}</a>
                 </li>
                 <li>
-                  <a href="#testimonials">Testimonials</a>
+                  <a href="#testimonials">{t("header.navTestimonials")}</a>
                 </li>
                 <li>
-                  <a href="#contact">Contact</a>
+                  <a href="#contact">{t("header.navContact")}</a>
                 </li>
               </ul>
             </div>
             <div className="links-column">
-              <h4 className="links-title">Contact</h4>
+              <h4 className="links-title">{t("header.navContact")}</h4>
               <ul>
                 <li>
                   <i className="fas fa-envelope"></i>
                   <a href="mailto:Intuition.hmt@gmail.com">
-                    Intuition.hmt@gmail.com
+                    {t("contact.emailAdress")}
                   </a>
                 </li>
                 <li>
@@ -104,7 +106,7 @@ const Footer: FC<FooterProps> = ({ darkMode, toggleTheme }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Book Online
+                    {t("contact.book")}
                   </a>
                 </li>
                 <li>
@@ -118,8 +120,7 @@ const Footer: FC<FooterProps> = ({ darkMode, toggleTheme }) => {
 
         <div className="footer-bottom">
           <div className="copyright">
-            &copy; {new Date().getFullYear()} Intuition Holistic and Massage
-            Therapy. All rights reserved.
+            &copy; {new Date().getFullYear()} {t("footer.copyright")}
           </div>
           {/* <div className="legal-links">
             <a href="#">Privacy Policy</a>

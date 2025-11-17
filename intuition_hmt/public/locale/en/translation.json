@@ -4,7 +4,8 @@
     "navAbout": "About",
     "navTestimonials": "Testimonials",
     "navContact": "Contact",
-    "ariaLabelMenu": "Menu"
+    "ariaLabelMenu": "Menu",
+    "bookNow": "Book Now"
   },
   "hero": {
     "title": "Holistic Healing for Mind & Body",
@@ -14,7 +15,8 @@
   },
   "about": {
     "title": "About Intuition",
-    "descriptionOne": "As a Licensed Massage Therapist and Holistic Practitioner, I offer personalized, therapeutic, and rejuvenating bodywork tailored to each client's needs. My passion lies in helping people reconnect with their mind, body, and spirit to support overall well-being.",
+    "firstLetter": "A",
+    "descriptionOne": "s a Licensed Massage Therapist and Holistic Practitioner, I offer personalized, therapeutic, and rejuvenating bodywork tailored to each client's needs. My passion lies in helping people reconnect with their mind, body, and spirit to support overall well-being.",
     "descriptionTwo": "I specialize in a variety of massage modalities, including deep tissue, Swedish, prenatal, and Lomi Lomi. With a strong understanding of anatomy and an intuitive touch, I create sessions that are both effective and deeply restorative.",
     "descriptionThree": "Beyond massage, I offer holistic services such as fertility support, acupressure/Traditional Chinese Medicine, reflexology, Reiki, sound healing, and other energy-based techniques. I also provide select aesthetic treatments like facial massage and Brazilian lymphatic drainage body contouring.",
     "descriptionFour": "It is my mission to create a safe, comfortable, and healing environment where clients can experience the profound benefits of massage and holistic therapies."
@@ -95,7 +97,11 @@
         "title": "Hot Stone Therapy",
         "description": "Experience deep relaxation as warm stones melt away tension. Smooth stones are placed on the body and also used in combination with massage techniques to release tight muscles. Pressure ranges from medium to medium-firm."
       }
-    }
+    },
+    "readMore": "Read More",
+    "readLess": "Read Less",
+    "showMoreServices": "Show More Services",
+    "showLessServices": "Show Less Services"
   },
   "testimonials": {
     "title": "Client Testimonials",

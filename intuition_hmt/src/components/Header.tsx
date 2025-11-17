@@ -2,7 +2,8 @@ import { FC } from "react";
 import ThemeToggle from "./ThemeToggle";
 import MobileMenu from "./MobileMenu";
 import logo from "../assets/intuition-logo-image-only.webp";
-
+import LanguageSwitcher from "./LanguageSwitcher"; // 👈 New Import
+import { useTranslation } from "react-i18next";
 interface HeaderProps {
   darkMode?: boolean;
   toggleTheme?: () => void;
@@ -16,6 +17,7 @@ const Header: FC<HeaderProps> = ({
   mobileMenuOpen,
   toggleMobileMenu,
 }) => {
+  const { t } = useTranslation();
   const handleDesktopNavClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
     id: string
@@ -46,7 +48,7 @@ const Header: FC<HeaderProps> = ({
                   href="#services"
                   onClick={(e) => handleDesktopNavClick(e, "services")}
                 >
-                  Services
+                  {t("header.navServices")}
                 </a>
               </li>
               <li>
@@ -54,7 +56,7 @@ const Header: FC<HeaderProps> = ({
                   href="#about"
                   onClick={(e) => handleDesktopNavClick(e, "about")}
                 >
-                  About
+                  {t("header.navAbout")}
                 </a>
               </li>
               <li>
@@ -62,7 +64,7 @@ const Header: FC<HeaderProps> = ({
                   href="#testimonials"
                   onClick={(e) => handleDesktopNavClick(e, "testimonials")}
                 >
-                  Testimonials
+                  {t("header.navTestimonials")}
                 </a>
               </li>
               <li>
@@ -70,27 +72,29 @@ const Header: FC<HeaderProps> = ({
                   href="#contact"
                   onClick={(e) => handleDesktopNavClick(e, "contact")}
                 >
-                  Contact
+                  {t("header.navContact")}
                 </a>
               </li>
             </ul>
           </nav>
 
           <div className="header-actions">
+            {/* 👈 The Language Switcher goes here */}
+            <LanguageSwitcher />
             <button
               className={`hamburger ${mobileMenuOpen ? "open" : ""}`}
               onClick={toggleMobileMenu}
               aria-label="Menu"
             >
-              <span></span>
-              <span></span>
+              <span></span> <span></span>
               <span></span>
             </button>
+            {/* The ThemeToggle can be uncommented here if you want it visible too */}
+
             {/* <ThemeToggle darkMode={darkMode} toggleTheme={toggleTheme} /> */}
           </div>
         </div>
       </div>
-
       <MobileMenu isOpen={mobileMenuOpen} onClose={toggleMobileMenu} />
     </header>
   );
