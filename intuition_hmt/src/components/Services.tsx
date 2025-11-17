@@ -87,7 +87,6 @@ const ServiceImage: FC<ServiceImageProps> = ({ src, alt, className }) => {
 
   return (
     <div className={`image-container ${isLoaded ? "loaded" : ""}`}>
-           {" "}
       <img
         loading="lazy"
         src={src}
@@ -95,7 +94,6 @@ const ServiceImage: FC<ServiceImageProps> = ({ src, alt, className }) => {
         className={className}
         onLoad={() => setIsLoaded(true)}
       />
-         {" "}
     </div>
   );
 };
