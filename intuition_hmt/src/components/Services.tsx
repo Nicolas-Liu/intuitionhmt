@@ -207,7 +207,6 @@ const Services: FC = () => {
         {services.length > 6 && (
           <div className="show-more-container">
             <button className="show-more-btn" onClick={toggleShowAll}>
-              {/* 👈 Translate Show More/Less Services button */} 
               {showAll
                 ? t("services.showLessServices")
                 : t("services.showMoreServices")}
