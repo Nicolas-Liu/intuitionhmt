@@ -18,8 +18,10 @@ const NotificationBanner: FC = () => {
         <div className="banner-message">
           {/* <span className="banner-icon">📋</span> */}
           <p>
-            Due to unforeseen events, I will not be seeing any clients until
-            October 26th. Thank you for understanding.
+            Place is limited. I will be operating until December 18th, then off
+            for 6 weeks. Availability may be limited on the booking site. Please
+            email or text me to make an appointment. Thank you for your
+            understanding 🙏🏽 Happy holidays!
           </p>
         </div>
         <button

@@ -5,7 +5,6 @@ import "./LanguageSwitcher.css";
 const LanguageSwitcher: FC = () => {
   const { i18n } = useTranslation();
 
-  // Get the current language code (e.g., 'en' or 'fr')
   const currentLanguage = i18n.language.substring(0, 2);
 
   const changeLanguage = (lng: "en" | "fr") => {
