@@ -54,7 +54,7 @@ const SERVICE_IMAGES: Record<string, string> = {
   cupping:
     "https://sa1s3optim.patientpop.com/assets/images/provider/photos/2431087.png",
   guaSha:
-    "https://www.henryford.com/-/media/project/hfhs/henryford/content-images/henry-ford/services/integrative-medicine/gua-sha.jpg?h=234&w=350&hash=8EB8B4A0CF0714012E2989092B610E85",
+    "https://www.northeastspineandsports.com/wp-content/uploads/2021/09/shutterstock_101865523-scaled.jpg",
   flowerEssences:
     "https://post.healthline.com/wp-content/uploads/2020/09/flower-petal-essence-oil-essential-1296x728-header.jpg",
   lymphaticDrainageVodder:
