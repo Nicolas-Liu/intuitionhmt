@@ -141,7 +141,10 @@ const Services: FC = () => {
 
     if (wasShowingAll && servicesRef.current) {
       setTimeout(() => {
-        servicesRef.current?.scrollIntoView();
+        servicesRef.current?.scrollIntoView({
+          behavior: "auto",
+          block: "start",
+        });
       }, 0);
     }
   };

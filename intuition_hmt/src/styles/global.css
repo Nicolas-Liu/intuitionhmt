@@ -30,7 +30,9 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--text-color);
   background-color: var(--background-color);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 .container {
@@ -126,6 +128,12 @@ a:hover {
 .desktop-nav a {
   font-weight: 500;
   scroll-behavior: smooth;
+}
+
+/* offset fixed header when navigating to hash anchors */
+section[id],
+[data-section] {
+  scroll-margin-top: calc(100px + 0.5rem);
 }
 
 .header-actions {

@@ -1,14 +1,28 @@
-import { FC, useEffect } from "react";
+import { FC, MouseEvent, useEffect } from "react";
 import "./Hero.css";
 import heroBackground from "../assets/hero-background.webp";
 import { useTranslation } from "react-i18next";
 
 const Hero: FC = () => {
   const { t } = useTranslation();
+
+  const scrollToSection =
+    (id: string) => (event: MouseEvent<HTMLAnchorElement>) => {
+      event.preventDefault();
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest",
+        });
+      }
+    };
+
   useEffect(() => {
     // This will ensure the animations trigger when the component mounts
     const elements = document.querySelectorAll(
-      ".hero h1, .hero .subtitle, .hero .hero-actions"
+      ".hero h1, .hero .subtitle, .hero .hero-actions",
     );
     elements.forEach((el) => el.classList.add("animate"));
   }, []);
@@ -52,7 +66,11 @@ const Hero: FC = () => {
             >
               {t("hero.book")}
             </a>
-            <a href="#services" className="button secondary">
+            <a
+              href="#services"
+              onClick={scrollToSection("services")}
+              className="button secondary"
+            >
               {t("hero.services")}
             </a>
           </div>
