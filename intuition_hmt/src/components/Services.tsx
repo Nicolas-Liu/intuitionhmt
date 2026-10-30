@@ -36,7 +36,7 @@ const SERVICE_IMAGES: Record<string, string> = {
   acupressure:
     "https://images.ctfassets.net/yixw23k2v6vo/spu_wysiwyg_fid42714_asset/42f4ba77cbd1df0b1f5777e3f4ff908d/acupressure_thumbs_on_back_iStock-495718179.jpg",
   prenatalMassage:
-    "https://nychirocenter.com/wp-content/uploads/manhattan-prenatal-massage-2.jpg",
+    "https://images.squarespace-cdn.com/content/v1/624284145e80a226df41caad/76d335f5-b57e-4e10-8c53-d20ea49e26e2/prenatal+massage+San+Antonio",
   reflexology:
     "https://www.zeel.com/blog/wp-content/uploads/2023/12/reflexology-foot-massage-feat.jpg",
   reikiHealing:

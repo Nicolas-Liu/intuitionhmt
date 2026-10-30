@@ -46,7 +46,9 @@
   overflow: hidden; /* To keep the image border radius */
   position: relative;
 }
-
+.service-card p {
+  white-space: pre-line;
+}
 /* Optional: Add a subtle loading pulse effect */
 .image-container:not(.loaded) {
   animation: pulse 1.5s infinite;
